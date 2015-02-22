@@ -1,0 +1,24 @@
+<h1> Enter in the new product. </h1>
+<br>
+<%= form_tag '/products' do %>
+<ul>
+<li><h4><%= label_tag :Title %>
+<%= text_field_tag :title %></li>
+<br>
+<li><h4><%= label_tag :image %>
+<%= text_field_tag :image %></li>
+<br>
+<li><h4><%= label_tag :Description %>
+<%= text_field_tag :description %></li>
+<br>
+<li><h4><%= label_tag :Category %>
+<%= text_field_tag :category %></li>
+<br>
+<li><h4><%= label_tag :System %>
+<%= text_field_tag :brand %></li>
+<br>
+<li><h4><%= label_tag :Price %>
+<%= text_field_tag :price %></li>
+<br>
+<%= submit_tag "Submit" %></ul>
+<% end %>
