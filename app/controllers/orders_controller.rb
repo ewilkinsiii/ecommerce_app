@@ -7,7 +7,7 @@ class OrdersController < ApplicationController
     order.tax= order.calculate_tax
     order.total=order.calculate_total
     order.save
-    flash[:success] = "Thanks fo shopping!"
+    flash[:success] = "Thanks for shopping!"
     redirect_to "/products" 
   end
 end
